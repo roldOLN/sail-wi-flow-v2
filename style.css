@@ -5,6 +5,10 @@ body{
     background-size: cover;
 }
 
+.navbar{
+    display: none !important;
+}
+
 #logo{
     width: 80px;
 }
@@ -125,9 +129,9 @@ input[type="number"]{
     font-family: montserrat;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    /* gap: 90px; */
+    gap: 20px;
 }
 
 .border{
@@ -222,6 +226,7 @@ div {
 }
 
 @media (min-width:600px) and (max-width:930px) {
+
     .project-partnership-mobile{
     display: none;
     }
@@ -331,6 +336,10 @@ div {
 
 @media (max-width:599px) {
     
+    .navbar{
+    display: inline-flex !important;
+    }
+
     #logo{
         width: 3rem;
     }
