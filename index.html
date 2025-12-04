@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sail Wi-Flow</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
+    </head>
+
+    <body>
+        <div class="menu-ribbon">
+            <div class="logo">
+                <img id="logo" src="./assets/logo.svg" alt="Sail Wi-Flow logo"/>
+            </div>
+            <div class="features">
+                <a href="./index.html" id="home">Home</a>
+                <a href="./landmarks.html" id="landmarks">Route Map</a>
+                <a href="" id="schedule">Schedule</a>
+                <a href="" id="sign-in">Sign-in</a>
+            </div>
+            <nav class="navbar fixed-right">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" 
+                aria-labelledby="offcanvasNavbarLabel">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./landmarks.html">Route Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign-in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-feature">
+            <h1 id="title">FIND YOUR ROUTE</h1>
+            <div class="user-inputs d-flex justify-content-center gap-3">
+                <select name="origin" id="origin-select" class="form-select form-select-lg w-auto mb-3" aria-label="Large select example">
+                    <option value="">Origin</option>
+                    <option value="Pinagbuhatan">Pinagbuhatan</option>
+                    <option value="Kalawaan">Kalawaan</option>
+                    <option value="San Joaquin">San Joaquin</option>
+                    <option value="Guadalupe">Guadalupe</option>
+                    <option value="Hulo">Hulo</option>
+                    <option value="Valenzuela">Valenzuela</option>
+                    <option value="Lambingan">Lambingan</option>
+                    <option value="Sta. Ana">Sta. Ana</option>
+                    <option value="PUP">PUP</option>
+                    <option value="Quinta">Quinta</option>
+                    <option value="Lawton">Lawton</option>
+                    <option value="Escolta">Escolta</option>
+                </select>
+                <select name="destination" id="destination-select" class="form-select form-select-lg w-auto mb-3" aria-label="Large select example">
+                    <option value="">Destination</option>
+                    <option value="Pinagbuhatan">Pinagbuhatan</option>
+                    <option value="Kalawaan">Kalawaan</option>
+                    <option value="San Joaquin">San Joaquin</option>
+                    <option value="Guadalupe">Guadalupe</option>
+                    <option value="Hulo">Hulo</option>
+                    <option value="Valenzuela">Valenzuela</option>
+                    <option value="Lambingan">Lambingan</option>
+                    <option value="Sta. Ana">Sta. Ana</option>
+                    <option value="PUP">PUP</option>
+                    <option value="Quinta">Quinta</option>
+                    <option value="Lawton">Lawton</option>
+                    <option value="Escolta">Escolta</option>
+                </select>
+                <input placeholder="No. of Passengers" type="number" name="number"/>
+            </div>
+
+            <div class="system-outputs">
+                <div class="time-output">
+                    <div class="departure-time">
+                        <p>Departure Time</p>
+                            <p id="departure-time-value">9:00 AM</p>
+                    </div>
+
+                    <div class="arrival-time">
+                        <p>Arrival Time</p>
+                            <p id="arrival-time-value">8:50 AM</p>
+                    </div>
+
+                </div>
+                <div class="border" id="border1"></div>
+                <div class="availability-output">
+                    <p>Available Seats</p>
+                    <p id="available-seats-value">10</p>
+                </div>
+                <div class="border" id="border2"></div>
+                <div class="fare-output">
+                    <p>Price</p>
+                    <p id="price-value">Php. 0.00</p>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+
+    <footer>
+    <div class="footer">
+        <div class="logos">
+            <div class="logo">
+                <img src="./assets/green-logo.svg" alt="green logo" id="green-logo"/>
+            </div>
+
+            <div class="project-partnership">
+                <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership"/>
+            </div>
+        </div>
+        <div class="project-partnership-mobile">
+                <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership-mobile"/>
+        </div>
+        <div class="contact-details">
+            <div class="contacts">
+                <p>Contact Us</p>
+                <div class="contact-logos">
+                    <a href="https://www.facebook.com/noreen.cereno"><img id="fb" src="./assets/fb.svg" alt="faceboook"/></a>
+                    <a href="https://x.com/"><img id="x" src="./assets/x.svg" alt="X"/></a>
+                    <a href="mailto:sailwiflow@gmail.com"><img id="email" src="./assets/email.svg" alt="email"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-the-project">
+            <div class="About">
+                <p>About</p>
+                <p class="about-texts"> <span>Sail Wi-Flow</span> transforms urban commuting by utilizing the Pasig River to provide a fast, predictable, and sustainable transit solution. We offer seamless high-speed Wi-Flow connectivity onboard every vessel, operating in partnership with the <span>MMDA</span> to enhance productivity and revitalize the urban waterways.</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</html>
