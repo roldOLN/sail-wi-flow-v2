@@ -60,7 +60,7 @@
             <h1 id="title">FIND YOUR ROUTE</h1>
             <div class="user-inputs d-flex justify-content-center gap-3">
                 <select name="origin" id="origin-select" class="form-select form-select-lg w-auto mb-3" aria-label="Large select example">
-                    <option value="">Origin</option>
+                    <option value="origin">Origin</option>
                     <option value="Pinagbuhatan">Pinagbuhatan</option>
                     <option value="Kalawaan">Kalawaan</option>
                     <option value="San Joaquin">San Joaquin</option>
@@ -75,7 +75,7 @@
                     <option value="Escolta">Escolta</option>
                 </select>
                 <select name="destination" id="destination-select" class="form-select form-select-lg w-auto mb-3" aria-label="Large select example">
-                    <option value="">Destination</option>
+                    <option value="destination">Destination</option>
                     <option value="Pinagbuhatan">Pinagbuhatan</option>
                     <option value="Kalawaan">Kalawaan</option>
                     <option value="San Joaquin">San Joaquin</option>
@@ -96,19 +96,19 @@
                 <div class="time-output">
                     <div class="departure-time">
                         <p>Departure Time</p>
-                            <p id="departure-time-value">9:00 AM</p>
+                            <p id="departure-time-value">-</p>
                     </div>
 
                     <div class="arrival-time">
                         <p>Arrival Time</p>
-                            <p id="arrival-time-value">8:50 AM</p>
+                            <p id="arrival-time-value">-</p>
                     </div>
 
                 </div>
                 <div class="border" id="border1"></div>
                 <div class="availability-output">
                     <p>Available Seats</p>
-                    <p id="available-seats-value">10</p>
+                    <p id="available-seats-value">-</p>
                 </div>
                 <div class="border" id="border2"></div>
                 <div class="fare-output">
@@ -117,40 +117,43 @@
                 </div>
             </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
 
-    <footer>
-    <div class="footer">
-        <div class="logos">
-            <div class="logo">
-                <img src="./assets/green-logo.svg" alt="green logo" id="green-logo"/>
+        <footer>
+        <div class="footer">
+            <div class="logos">
+                <div class="logo">
+                    <img src="./assets/green-logo.svg" alt="green logo" id="green-logo"/>
+                </div>
+
+                <div class="project-partnership">
+                    <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership"/>
+                </div>
+            </div>
+            <div class="project-partnership-mobile">
+                    <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership-mobile"/>
+            </div>
+            <div class="contact-details">
+                <div class="contacts">
+                    <p>Contact Us</p>
+                    <div class="contact-logos">
+                        <a href="https://www.facebook.com/noreen.cereno"><img id="fb" src="./assets/fb.svg" alt="faceboook"/></a>
+                        <a href="https://x.com/"><img id="x" src="./assets/x.svg" alt="X"/></a>
+                        <a href="mailto:sailwiflow@gmail.com"><img id="email" src="./assets/email.svg" alt="email"/></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-partnership">
-                <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership"/>
-            </div>
-        </div>
-        <div class="project-partnership-mobile">
-                <img src="./assets/partnershipxproject.svg" alt="projectxpartnership" id="projectxpartnership-mobile"/>
-        </div>
-        <div class="contact-details">
-            <div class="contacts">
-                <p>Contact Us</p>
-                <div class="contact-logos">
-                    <a href="https://www.facebook.com/noreen.cereno"><img id="fb" src="./assets/fb.svg" alt="faceboook"/></a>
-                    <a href="https://x.com/"><img id="x" src="./assets/x.svg" alt="X"/></a>
-                    <a href="mailto:sailwiflow@gmail.com"><img id="email" src="./assets/email.svg" alt="email"/></a>
+            <div class="about-the-project">
+                <div class="About">
+                    <p>About</p>
+                    <p class="about-texts"> <span>Sail Wi-Flow</span> transforms urban commuting by utilizing the Pasig River to provide a fast, predictable, and sustainable transit solution. We offer seamless high-speed Wi-Flow connectivity onboard every vessel, operating in partnership with the <span>MMDA</span> to enhance productivity and revitalize the urban waterways.</p>
                 </div>
             </div>
         </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+    </body>
 
-        <div class="about-the-project">
-            <div class="About">
-                <p>About</p>
-                <p class="about-texts"> <span>Sail Wi-Flow</span> transforms urban commuting by utilizing the Pasig River to provide a fast, predictable, and sustainable transit solution. We offer seamless high-speed Wi-Flow connectivity onboard every vessel, operating in partnership with the <span>MMDA</span> to enhance productivity and revitalize the urban waterways.</p>
-            </div>
-        </div>
-    </div>
-    </footer>
 </html>
