@@ -144,6 +144,10 @@ input[type="number"]{
     color: #caedff;
 }
 
+#price-value{
+    margin: 30px;
+}
+
 div > p{
     font-weight: bold;
 }
